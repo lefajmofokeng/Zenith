@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightfall Hoodie Product Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="nf-prod-unique-wrapper">
+    <div class="nf-prod-layout-container">
+        
+        <div class="nf-prod-info-column">
+            <h1 class="nf-prod-heading-primary">
+                NIGHTFALL<br>
+                OVERSIZED<br>
+                HOODIE
+            </h1>
+            <p class="nf-prod-description-body">
+                A heavyweight, ultra-soft hoodie designed for comfort and style. Featuring a relaxed fit, subtle embroidered detailing, and a faded wash for that perfect worn-in look. Street-ready and built to stand out.
+            </p>
+            
+            <div class="nf-prod-pricing-box">
+                <span class="nf-prod-price-current">$89</span>
+                <span class="nf-prod-price-original">$99</span>
+            </div>
+
+            <button class="nf-prod-cta-button">
+                <svg class="nf-prod-cta-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="16" fill="#121212"/>
+                    <path d="M14 21L19 16L14 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="nf-prod-cta-text">Shop now</span>
+            </button>
+        </div>
+
+        <div class="nf-prod-gallery-column">
+            <div class="nf-prod-main-image-frame">
+                <img id="nf-prod-main-img-target" src="https://images.unsplash.com/photo-1657010643636-a584b146642b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nightfall Oversized Hoodie Main View" class="nf-prod-img-responsive">
+            </div>
+            
+            <div class="nf-prod-thumb-grid">
+                
+                <div class="nf-prod-thumb-frame" onclick="nfChangeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1680292783974-a9a336c10366?q=80&w=694&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumbnail view 1" class="nf-prod-img-responsive">
+                </div>
+                
+                <div class="nf-prod-thumb-frame nf-prod-thumb-active" onclick="nfChangeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1657010643636-a584b146642b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumbnail view 2" class="nf-prod-img-responsive">
+                </div>
+                
+                <div class="nf-prod-thumb-frame" onclick="nfChangeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1542406775-ade58c52d2e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumbnail view 3" class="nf-prod-img-responsive">
+                </div>
+                
+                <div class="nf-prod-thumb-frame" onclick="nfChangeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1609873814058-a8928924184a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thumbnail view 4" class="nf-prod-img-responsive">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

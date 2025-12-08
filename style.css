@@ -1,0 +1,221 @@
+/* CSS styles for the Nightfall Product Section.
+   Prefix 'nf-prod-' used to prevent conflicts.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+.nf-prod-unique-wrapper {
+    background-color: #121212; 
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 80px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Resets */
+.nf-prod-unique-wrapper *,
+.nf-prod-unique-wrapper *::before,
+.nf-prod-unique-wrapper *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.nf-prod-layout-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 60px;
+}
+
+/* Left Column */
+.nf-prod-info-column {
+    flex: 1;
+    max-width: 480px;
+    text-align: left;
+}
+
+.nf-prod-heading-primary {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+}
+
+.nf-prod-description-body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #A1A1A1;
+    margin-bottom: 40px;
+    padding-right: 20px;
+}
+
+.nf-prod-pricing-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.nf-prod-price-current {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: #ffffff;
+}
+
+.nf-prod-price-original {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #5A5A5A;
+    text-decoration: line-through;
+    position: relative;
+    top: 4px;
+}
+
+/* Button */
+.nf-prod-cta-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    padding: 6px 28px 6px 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-decoration: none;
+}
+
+.nf-prod-cta-button:hover {
+    background-color: #EBEBEB;
+}
+
+.nf-prod-cta-button:active {
+    transform: scale(0.98);
+}
+
+.nf-prod-cta-icon-svg {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+}
+
+.nf-prod-cta-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #121212;
+}
+
+/* Right Column & Gallery */
+.nf-prod-gallery-column {
+    flex: 1.3;
+    max-width: 600px;
+}
+
+.nf-prod-img-responsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Image */
+.nf-prod-main-image-frame {
+    width: 100%;
+    height: 80vh;
+    aspect-ratio: 4 / 5;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    transition: opacity 0.2s ease; /* Smooth transition support */
+}
+
+/* Thumbnails */
+.nf-prod-thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.nf-prod-thumb-frame {
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    background-color: #1a1a1a;
+}
+
+.nf-prod-thumb-frame:hover {
+     border-color: #5A5A5A;
+}
+
+.nf-prod-thumb-active {
+    border-color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+    .nf-prod-heading-primary {
+        font-size: 3.5rem;
+    }
+    .nf-prod-layout-container {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nf-prod-unique-wrapper {
+        padding: 60px 20px;
+    }
+    
+    .nf-prod-layout-container {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .nf-prod-info-column, 
+    .nf-prod-gallery-column {
+        max-width: 100%;
+        flex: auto;
+    }
+
+    .nf-prod-heading-primary {
+        font-size: 3rem;
+        margin-bottom: 24px;
+    }
+    
+    .nf-prod-description-body {
+        padding-right: 0;
+    }
+    
+    .nf-prod-main-image-frame {
+         aspect-ratio: 1 / 1; 
+    }
+
+    .nf-prod-thumb-grid {
+        gap: 12px;
+    }
+}
