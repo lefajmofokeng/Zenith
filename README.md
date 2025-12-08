@@ -611,5 +611,3 @@ import { ZenithModule } from '@thisislefa/zenith/angular'
 ---
 
 **Zenith** — Where products become icons. Minimalist design, maximum impact.
- 
- 
