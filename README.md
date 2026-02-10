@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[View Zenith](https://thisislefa.github.io/Zenith)
+[View Zenith](https://lefajmofokeng.github.io/Zenith)
 
 ---
 
